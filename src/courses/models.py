@@ -15,7 +15,7 @@ class AccessRequirement(models.TextChoices):
 
 
 def handle_image_upload(instance, filename):
-    return f"course_images/{instance.title}/{filename}"
+    return f"{filename}"
 
 
 class Course( models.Model ):
